@@ -18,6 +18,7 @@
     <modules>
         <module>dbcp</module>
         <module>jedis</module>
+        <module>spring</module>
     </modules>
 
     <dependencyManagement>
