@@ -19,6 +19,8 @@
         <module>dbcp</module>
         <module>jedis</module>
         <module>spring</module>
+        <module>httpClient</module>
+        <module>quartz</module>
     </modules>
 
     <dependencyManagement>

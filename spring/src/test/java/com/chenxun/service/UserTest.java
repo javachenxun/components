@@ -15,7 +15,6 @@ public class UserTest {
     public  void run(){
         ApplicationContext context =  new ClassPathXmlApplicationContext(new String[] {"services.xml"});
         UserService user = context.getBean("user", UserService.class);
-        ;
         LOG.info("name="+user.getName());
     }
 }
