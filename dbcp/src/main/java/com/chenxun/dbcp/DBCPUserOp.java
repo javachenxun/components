@@ -1,13 +1,13 @@
 package com.chenxun.dbcp;
 
-import com.chenxun.jdbc.JDBCUtils;
 import com.chenxun.jdbc.User;
-import org.apache.log4j.Logger;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 import java.sql.*;
 
 public class DBCPUserOp {
-	static Logger LOG = Logger.getLogger(DBCPUserOp.class);
+	static final Log LOG = LogFactory.getLog(DBCPUserOp.class);
 
 	public void addUser_Statement(User user) {
 		Connection connection = ConnectionPool.getConnection();

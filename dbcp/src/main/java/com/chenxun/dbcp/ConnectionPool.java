@@ -2,7 +2,8 @@ package com.chenxun.dbcp;
 
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.apache.commons.dbcp2.BasicDataSourceFactory;
-import org.apache.log4j.Logger;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -10,17 +11,14 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.HashSet;
 import java.util.Properties;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Created by chenxun on 2017/4/23.
  */
 public class ConnectionPool {
 
-    static Logger LOG = Logger.getLogger(ConnectionPool.class);
+    static final Log LOG = LogFactory.getLog(ConnectionPool.class);
 
     private ConnectionPool() {
     }
