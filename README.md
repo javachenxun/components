@@ -1,16 +1,5 @@
-#### 1.dbcp，version：2.2
-##### 1.1关于dbcp连接池的连接复用
-    GenericObjectPool其中维护一个ConcurrentHashMap存放连接;org.apache.commons.dbcp2.PoolingDataSource.PoolGuardConnectionWrapper.close()
-    覆写关闭连接。
-    
-#### 2.jedis，version：2.9.0
-##### 2.1关于jedis基本使用
-    1.基本使用
-    2.添加多实例(分布式)多线程场景下的安全并发执行db问题：setnx+队列解决
-    ps：单实例多线程执行，添加锁或同步代码块可以解决
-        多实例单线程，使用分布式锁setnx即可解决+（对于队列中没有消费的任务，采用ScheduledThreadPoolExecutor启动线程定时做补偿）
-        
-#### 3.spring，version：4.2.4.RELEASE
-http://maven.springframework.org/release/org/springframework/spring/
-
-
+#### 版本的说明
+    alpha版：内部测试版。α是希腊字母的第一个，表示最早的版本，一般用户不要下载这个版本，这个版本包含很多BUG.
+    beta版：公开测试版。β是希腊字母的第二个,主要是给用户和忠实用户测试用的，该版本任然存 在很多BUG。 
+    rc版：全写：Release Candidate（候选版本）。该版本又较beta版更进一步了，该版本功能不再增加，和最终发布版功能一样。
+    stable版：稳定版。在开源软件中，都有stable版，这个就是开源软件的最终发行版，用户可以放心大胆的用了。

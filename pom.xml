@@ -1,7 +1,7 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.chenxun</groupId>
+    <groupId>com.chenxun.components</groupId>
     <artifactId>components</artifactId>
     <version>1.0</version>
     <packaging>pom</packaging>
@@ -20,11 +20,11 @@
         <module>spring</module>
         <module>httpClient</module>
         <module>quartz</module>
+        <module>netty</module>
+        <module>log</module>
     </modules>
 
     <dependencyManagement>
-        <dependencies>
-        </dependencies>
     </dependencyManagement>
 
     <dependencies>
