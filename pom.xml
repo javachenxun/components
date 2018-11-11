@@ -33,6 +33,7 @@
         <module>netty</module>
         <module>log</module>
         <module>springboot</module>
+        <module>elastic</module>
     </modules>
 
     <dependencyManagement>
