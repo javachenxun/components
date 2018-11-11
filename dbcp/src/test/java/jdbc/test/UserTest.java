@@ -1,7 +1,7 @@
 package jdbc.test;
 
-import com.chenxun.components.dbcp.jdbc.User;
-import com.chenxun.components.dbcp.jdbc.UserOp;
+import com.core.components.dbcp.jdbc.User;
+import com.core.components.dbcp.jdbc.UserOp;
 import org.junit.Test;
 
 import java.util.List;

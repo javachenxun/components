@@ -1,7 +1,7 @@
 package dbcp.test;
 
-import com.chenxun.components.dbcp.dbcp.DBCPUserOp;
-import com.chenxun.components.dbcp.jdbc.User;
+import com.core.components.dbcp.dbcp.DBCPUserOp;
+import com.core.components.dbcp.jdbc.User;
 import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;
