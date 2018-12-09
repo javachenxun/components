@@ -1,4 +1,4 @@
-package com.core.components.netty.chapter01.server;
+package com.core.components.netty.chapter02.server;
 
 import com.core.components.netty.Const;
 

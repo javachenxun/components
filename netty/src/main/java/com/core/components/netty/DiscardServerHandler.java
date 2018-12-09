@@ -18,6 +18,7 @@ public class DiscardServerHandler extends ChannelHandlerAdapter {
         try {
             while (in.isReadable()) {
                 System.out.print((char) in.readByte());
+                System.out.println(msg);
                 System.out.flush();
                 ctx.write(msg);
                 ctx.flush();

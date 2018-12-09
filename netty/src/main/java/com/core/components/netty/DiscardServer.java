@@ -21,8 +21,8 @@ public class DiscardServer {
         EventLoopGroup bossGroup = new NioEventLoopGroup();
         EventLoopGroup workerGroup = new NioEventLoopGroup();
         try {
-            ServerBootstrap b = new ServerBootstrap();
-            b.group(bossGroup, workerGroup)
+            ServerBootstrap serverBootstrap = new ServerBootstrap();
+            serverBootstrap.group(bossGroup, workerGroup)
                     .channel(NioServerSocketChannel.class)
                     .childHandler(new ChannelInitializer() {
                         @Override
@@ -33,8 +33,8 @@ public class DiscardServer {
                     .option(ChannelOption.SO_BACKLOG, 128)
                     .childOption(ChannelOption.SO_KEEPALIVE, true);
 
-            ChannelFuture f = b.bind(port).sync();
-            f.channel().closeFuture().sync();
+            ChannelFuture channelFuture = serverBootstrap.bind(port).sync();
+            channelFuture.channel().closeFuture().sync();
         } finally {
             workerGroup.shutdownGracefully();
             bossGroup.shutdownGracefully();
@@ -46,7 +46,7 @@ public class DiscardServer {
         if (args.length >0) {
             port = Integer.parseInt(args[0]);
         } else {
-            port = 8080;
+            port = Const.PRORT;
         }
         new DiscardServer(port).run();
     }
