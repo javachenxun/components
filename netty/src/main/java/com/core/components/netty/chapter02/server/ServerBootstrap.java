@@ -36,7 +36,7 @@ public class ServerBootstrap {
             while (true) {
                 try {
                     Socket socket = serverSocket.accept();
-                    executor.execute(new ServerOfClientHandler(socket,client.getAndIncrement(),workQueue));
+                    executor.execute(new ClientHandler(socket,client.getAndIncrement(),workQueue));
                 } catch (Exception e) {
                     logger.error(" act=start  msg=服务端启动异常 ", e);
                 }

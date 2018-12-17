@@ -6,6 +6,6 @@ package com.core.components.netty;
  * Description:
  */
 public interface Const {
-    public static  String IP = "127.0.0.1";
-    public static  int PRORT = 8080;
+      String IP = "127.0.0.1";
+      int PRORT = 8080;
 }

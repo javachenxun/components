@@ -11,13 +11,13 @@ import java.net.Socket;
  * Date: 2018/12/3 下午11:46
  * Description:
  */
-public class ServerOfClientHandler {
+public class ClientHandler {
 
     Logger logger = LoggerFactory.getLogger(ServerBootstrap.class);
     private  Socket socket;
     private  int client;
 
-    public ServerOfClientHandler(Socket socket, int client) {
+    public ClientHandler(Socket socket, int client) {
         this.socket = socket;
         this.client = client;
     }

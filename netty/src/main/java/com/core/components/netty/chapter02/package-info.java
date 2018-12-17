@@ -9,7 +9,8 @@ package com.core.components.netty.chapter02;
  * 一个监听线程
  * n个链接，一个线程池处理n个链接
  *
- *
+ * 测试同类
+ * @see  com.core.components.netty.chapter01.client.Client
  *
  *
  *

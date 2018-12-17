@@ -12,14 +12,14 @@ import java.util.concurrent.BlockingQueue;
  * Date: 2018/12/3 下午11:46
  * Description:
  */
-public class ServerOfClientHandler implements Runnable{
+public class ClientHandler implements Runnable{
 
     Logger logger = LoggerFactory.getLogger(ServerBootstrap.class);
     private  Socket socket;
     private  int client;
     private  BlockingQueue blockingQueue;
 
-    public ServerOfClientHandler(Socket socket, int client, BlockingQueue blockingQueue) {
+    public ClientHandler(Socket socket, int client, BlockingQueue blockingQueue) {
         this.socket = socket;
         this.client = client;
         this.blockingQueue = blockingQueue;
